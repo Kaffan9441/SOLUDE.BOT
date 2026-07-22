@@ -1,0 +1,15 @@
+{
+  "name": "solude",
+  "version": "1.0.0",
+  "description": "Static single-page site for SoluDe.bot: ROS2 robotics × PLC industrial integration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "isomorphic-git": "^1.38.7"
+  }
+}

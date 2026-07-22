@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SoluDe.bot — ROS2 × PLC Industrial Automation</title>
+  <meta name="description" content="Bridging ROS2 ecosystems with industrial PLC infrastructure. Custom robotic manipulation, intelligent WMS fleets, and aftermarket field autonomy for mid-market industry.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SoluDe.bot — ROS2 Dexterity. PLC Determinism.">
+  <meta property="og:description" content="Custom robotic manipulation, intelligent WMS fleets, and aftermarket field autonomy for mid-market industry.">
+  <!-- og:image must be an absolute URL — update if deploying somewhere other than www.solude.bot -->
+  <meta property="og:image" content="https://www.solude.bot/img/og-card.jpg">
+  <meta property="og:url" content="https://www.solude.bot/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.solude.bot/img/og-card.jpg">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230b0c0d'/%3E%3Crect x='3' y='3' width='10' height='10' fill='%23c8ff4d'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav" id="nav">
+    <a href="#top" class="nav-logo">
+      <span class="logo-block"></span>
+      <span class="logo-word">SOLUDE<span class="accent">.</span>BOT</span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="nav-links">
+      <a href="#capabilities" class="nav-link">CAPABILITIES</a>
+      <a href="#agtech" class="nav-link">AGTECH</a>
+      <a href="#process" class="nav-link">PROCESS</a>
+      <a href="#contact" class="nav-cta">CONTACT ↗</a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section id="top" class="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-fade"></div>
+
+    <div class="hero-telemetry mono">
+      <div>LAT 42.3601 / LON −71.0589</div>
+      <div>SYS <span class="accent">NOMINAL</span> <span class="blink-dot"></span></div>
+      <div>LOOP <span id="loop-ms">2.4</span> MS</div>
+    </div>
+
+    <div class="hero-content">
+      <div class="kicker mono accent">// NEXT-GEN INDUSTRIAL STACK</div>
+      <h1>ROS2 dexterity.<br>PLC determinism.</h1>
+      <p class="hero-sub">Bridging ROS2 ecosystems with industrial PLC infrastructure — custom robotic manipulation, intelligent WMS fleets, and aftermarket field autonomy built on modern IIoT architectures and deterministic industrial networks.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-solid mono">INITIATE ARCHITECTURE REVIEW</a>
+        <a href="#capabilities" class="btn btn-ghost mono">VIEW STACK ↓</a>
+      </div>
+    </div>
+
+    <!-- protocol ticker -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track mono">
+        <div class="ticker-group">
+          <span>PROFINET</span><i>▹</i><span>ETHERNET/IP</span><i>▹</i><span>ETHERCAT</span><i>▹</i><span>MODBUS TCP</span><i>▹</i><span>OPC UA</span><i>▹</i><span>MQTT / AMQP</span><i>▹</i><span>ROS2 / DDS</span><i>▹</i><span>ISOBUS / CAN</span><i>▹</i>
+        </div>
+        <div class="ticker-group">
+          <span>PROFINET</span><i>▹</i><span>ETHERNET/IP</span><i>▹</i><span>ETHERCAT</span><i>▹</i><span>MODBUS TCP</span><i>▹</i><span>OPC UA</span><i>▹</i><span>MQTT / AMQP</span><i>▹</i><span>ROS2 / DDS</span><i>▹</i><span>ISOBUS / CAN</span><i>▹</i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MISSION ============ -->
+  <section class="mission">
+    <div class="mission-label">
+      <div class="section-num mono">// 00 — MISSION</div>
+      <figure class="mission-img reveal">
+        <img src="img/mission.jpg" alt="A robot cell glowing lime green on an otherwise dark manufacturing floor" width="1127" height="1400" loading="lazy">
+      </figure>
+    </div>
+    <div class="mission-body reveal">
+      <h2>Enterprise-grade autonomy for mid-market industry.</h2>
+      <p>Legacy plants shouldn't need multi-million dollar overhauls to run modern machine learning, adaptive paths, and modern internet infrastructure. <strong>SoluDe.bot</strong> brings open-source software dexterity — via the robust <strong>ROS2 framework</strong> — directly to the hardware layer of small-to-mid-size manufacturers. Adaptable robotics, deterministic PLC environments, one truly intelligent, data-transparent floor.</p>
+    </div>
+  </section>
+
+  <!-- ============ CAPABILITIES ============ -->
+  <section id="capabilities" class="section">
+    <div class="section-head">
+      <h2>Core competencies</h2>
+      <div class="section-num mono">// 01 — CAPABILITIES</div>
+    </div>
+
+    <div class="cap-grid">
+      <article class="cap-card reveal">
+        <div class="cap-meta mono"><span class="accent">01</span><span class="cap-tag">[ MANIPULATION ]</span></div>
+        <figure class="cap-img">
+          <img src="img/cap-manipulation.jpg" alt="Robot arm with a gripper end-effector picking metal parts from a bin" width="1400" height="939" loading="lazy">
+        </figure>
+        <h3>ROS2 Custom Robotic Manipulation</h3>
+        <p>We deploy advanced multi-axis robotic arms driven by reactive software frameworks for applications requiring spatial adaptability and precise positioning.</p>
+        <ul class="cap-points">
+          <li><i>▹</i><span><strong>ROS2 &amp; MoveIt2 Native Stack</strong> — real-time kinematic collision avoidance, dynamic path planning, and unified coordinate frame mappings.</span></li>
+          <li><i>▹</i><span><strong>Bespoke Smart End-Effectors</strong> — custom electric, pneumatic, or vacuum grippers outfitted with dynamic pressure and force-torque monitoring.</span></li>
+          <li><i>▹</i><span><strong>Advanced Pick-and-Place</strong> — 3D perception pipelines executing unstructured bin picking and part orientation corrections on active conveyors.</span></li>
+        </ul>
+      </article>
+
+      <article class="cap-card reveal">
+        <div class="cap-meta mono"><span class="accent">02</span><span class="cap-tag">[ FIELDBUS ]</span></div>
+        <figure class="cap-img">
+          <img src="img/cap-fieldbus.jpg" alt="Open industrial control cabinet with PLC racks and a lime patch cable" width="1400" height="939" loading="lazy">
+        </figure>
+        <h3>PLC &amp; Deterministic Integration</h3>
+        <p>Ensuring your advanced robotics play nice with heavy industrial hardware. Clean communication bridges linking soft-robotics with hard fieldbuses.</p>
+        <ul class="cap-points">
+          <li><i>▹</i><span><strong>Fieldbus Interoperability</strong> — native communication layouts via PROFINET, EtherNet/IP, EtherCAT, and Modbus TCP.</span></li>
+          <li><i>▹</i><span><strong>Unified PLC Handshakes</strong> — bulletproof multi-vendor logic interfaces: Siemens TIA Portal, Rockwell Studio 5000, and Omron Sysmac.</span></li>
+          <li><i>▹</i><span><strong>Safety PLC Integration</strong> — hardwired interlocking safety architectures combining laser scanners, guard doors, and robotic safety states.</span></li>
+        </ul>
+      </article>
+
+      <article class="cap-card reveal">
+        <div class="cap-meta mono"><span class="accent">03</span><span class="cap-tag">[ FLEET ]</span></div>
+        <figure class="cap-img">
+          <img src="img/cap-fleet.jpg" alt="Autonomous mobile robots casting lime LiDAR fans in a dark warehouse aisle" width="1400" height="939" loading="lazy">
+        </figure>
+        <h3>Smart WMS &amp; ROS Navigation Fleets</h3>
+        <p>Transform traditional storage into an optimization engine using mobile robot fleets running decentralized navigation algorithms.</p>
+        <ul class="cap-points">
+          <li><i>▹</i><span><strong>ROS2 Nav2 Fleet Deployment</strong> — AMRs utilizing advanced LiDAR SLAM to coordinate dynamic path generation across tight, shifting aisle maps.</span></li>
+          <li><i>▹</i><span><strong>Intelligent WMS Core</strong> — enterprise-grade inventory logic driving fleet dispatching, picking queues, and real-time replenishment tracks.</span></li>
+          <li><i>▹</i><span><strong>Heavy AGV Pallet Shuttles</strong> — high-torque automated guidance platforms handling dense, heavy payloads with active payload leveling.</span></li>
+        </ul>
+      </article>
+
+      <article class="cap-card reveal">
+        <div class="cap-meta mono"><span class="accent">04</span><span class="cap-tag">[ TELEMETRY ]</span></div>
+        <figure class="cap-img">
+          <img src="img/cap-iiot.jpg" alt="Rugged edge gateway with antennas emitting lime telemetry streams" width="1400" height="939" loading="lazy">
+        </figure>
+        <h3>IIoT Architecture &amp; Analytics</h3>
+        <p>Gain full, granular line visibility. We bridge edge sensors directly to modern analytics networks for complete floor transparency.</p>
+        <ul class="cap-points">
+          <li><i>▹</i><span><strong>OPC UA Unified Framework</strong> — standardized semantic model structuring to stream contextual data from the sensor up to the enterprise database.</span></li>
+          <li><i>▹</i><span><strong>MQTT/AMQP Edge Gateways</strong> — lightweight, ultra-reliable telemetry publication preserving data packets during intermittent drops.</span></li>
+          <li><i>▹</i><span><strong>Predictive Health Metrics</strong> — continuous thermal, current draw, and vibration tracking to catch component failures before downtime hits.</span></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ AGTECH ============ -->
+  <section id="agtech" class="agtech">
+    <div class="agtech-grid-bg"></div>
+    <div class="agtech-sweep"></div>
+    <div class="agtech-inner">
+      <div class="kicker mono accent">// 02 — AGTECH AUTONOMOUS KITS</div>
+      <h2>Aftermarket tractor autonomy</h2>
+      <p class="agtech-sub">Retrofit legacy commercial farm equipment into precise, driverless field vehicles. We integrate full-stack open navigation software directly into heavy-duty mechanical operations.</p>
+      <figure class="agtech-banner reveal">
+        <img src="img/agtech-banner.jpg" alt="Driverless retrofitted tractor with a lime-lit sensor pod working a field at dusk" width="1584" height="672" loading="lazy">
+      </figure>
+      <div class="kit-grid">
+        <div class="kit-card reveal">
+          <div class="kit-tag mono accent">[ NAVIGATE ]</div>
+          <h3>ROS2 Agriculture Stack</h3>
+          <p>Custom Nav2 configurations engineered for open-field pathing, uneven dirt terrain mapping, and dynamic implement control loop tracking.</p>
+        </div>
+        <div class="kit-card reveal">
+          <div class="kit-tag mono accent">[ LOCALIZE ]</div>
+          <h3>Dual RTK-GPS &amp; LiDAR</h3>
+          <p>Centimeter-accurate coordinates paired with heavy-dust and rain-resilient LiDAR nodes to guarantee completely secure obstacle classification.</p>
+        </div>
+        <div class="kit-card reveal">
+          <div class="kit-tag mono accent">[ ACTUATE ]</div>
+          <h3>ISOBUS &amp; Actuator Control</h3>
+          <p>Clean CAN/ISOBUS integrations alongside rugged drive-by-wire hydraulic systems to manage seeding, spraying, and steering loops.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section id="process" class="section">
+    <div class="section-head">
+      <h2>Integration lifecycle</h2>
+      <div class="section-num mono">// 03 — PROCESS</div>
+    </div>
+    <div class="steps-grid">
+      <div class="step reveal">
+        <div class="step-num mono">01</div>
+        <h3>Network &amp; Field Audit</h3>
+        <p>Mapping your existing PLC registers, checking local networking capabilities, and auditing structural workflow steps.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num mono">02</div>
+        <h3>ROS-Gazebo Emulation</h3>
+        <p>Simulating full system manipulation, path trajectories, and communication loop latency before installing hardware.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num mono">03</div>
+        <h3>Fieldbus Integration</h3>
+        <p>Deploying hardware, writing custom protocol handshake mapping blocks, and structuring logic routines.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num mono">04</div>
+        <h3>Edge Dashboarding</h3>
+        <p>Spinning up OPC UA / MQTT pipelines to push production data straight to live operator and engineering views.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="contact">
+    <div class="contact-info">
+      <div class="kicker mono accent">// 04 — CONTACT</div>
+      <h2>Consult an automation systems architect</h2>
+      <p>Ready to combine the agility of modern robotic software with the deterministic safety of industrial fieldbuses? Reach out to schedule an infrastructure review or request an integration design proposal.</p>
+      <div class="contact-rows mono">
+        <div class="contact-row"><span class="contact-key">DOMAIN</span><a href="https://www.solude.bot">www.solude.bot</a></div>
+        <div class="contact-row"><span class="contact-key">DIRECT</span><span>+1 (800) 555-0190</span></div>
+        <div class="contact-row"><span class="contact-key">SYSTEMS</span><a href="mailto:architecture@solude.bot">architecture@solude.bot</a></div>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap">
+      <div class="form-label mono">SYSTEM INTEGRATION REQUEST</div>
+      <form id="integration-form" class="contact-form" novalidate>
+        <div class="field">
+          <label for="f-name" class="mono">FULL NAME</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="f-org" class="mono">ORGANIZATION &amp; PLC STACK</label>
+          <input id="f-org" name="org" type="text" placeholder="e.g. Siemens TIA Portal" autocomplete="organization">
+        </div>
+        <div class="field">
+          <label class="mono">PRIMARY TECH TARGET</label>
+          <div class="chip-row" id="chip-row">
+            <button type="button" class="chip mono" data-value="ROS2 Robotics">ROS2 ROBOTICS</button>
+            <button type="button" class="chip mono" data-value="PLC Fieldbus">PLC FIELDBUS</button>
+            <button type="button" class="chip mono" data-value="IIoT Stack">IIOT STACK</button>
+            <button type="button" class="chip mono" data-value="AgTech Autonomy">AGTECH AUTONOMY</button>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-detail" class="mono">REQUIREMENTS</label>
+          <textarea id="f-detail" name="detail" rows="4" placeholder="Detail your protocol or customization needs…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-solid btn-full mono">INITIATE ARCHITECTURE REVIEW</button>
+        <div class="form-status mono" id="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-left">
+      <span class="logo-block small"></span>
+      <span class="mono">© 2026 SOLUDE.BOT AUTOMATION SYSTEMS. ALL RIGHTS RESERVED.</span>
+    </div>
+    <div class="footer-right mono">
+      <a href="#capabilities">CAPABILITIES</a>
+      <a href="#agtech">AGTECH</a>
+      <a href="#process">PROCESS</a>
+      <a href="#contact">CONTACT</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
