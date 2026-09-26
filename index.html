@@ -140,13 +140,16 @@
         <figure class="cap-img">
           <img src="img/cap-fieldbus.jpg" alt="Open industrial control cabinet with PLC racks and a lime patch cable" width="1400" height="939" loading="lazy">
         </figure>
-        <h3>PLC &amp; Deterministic Integration</h3>
-        <p>Ensuring your advanced robotics play nice with heavy industrial hardware. Clean communication bridges linking soft-robotics with hard fieldbuses.</p>
+        <h3>PLC Engineering &amp; Control Systems</h3>
+        <p>Develop, modernize, test, and support the control software at the heart of your operation. Scope the application, field integration, and acceptance criteria together.</p>
         <ul class="cap-points">
-          <li><i>▹</i><span><strong>Fieldbus Interoperability</strong> — native communication layouts via PROFINET, EtherNet/IP, EtherCAT, and Modbus TCP.</span></li>
-          <li><i>▹</i><span><strong>Unified PLC Handshakes</strong> — bulletproof multi-vendor logic interfaces: Siemens TIA Portal, Rockwell Studio 5000, and Omron Sysmac.</span></li>
-          <li><i>▹</i><span><strong>Safety PLC Integration</strong> — hardwired interlocking safety architectures combining laser scanners, guard doors, and robotic safety states.</span></li>
+          <li><i>▹</i><span><strong>PLC software engineering</strong> — IEC 61131-3 development with Ladder, Structured Text, Function Blocks, and sequential function charts; reusable libraries and application standards.</span></li>
+          <li><i>▹</i><span><strong>Multi-vendor modernization</strong> — Siemens, Rockwell, Omron, Schneider, and Beckhoff projects, with migration planning for legacy controllers and obsolete hardware.</span></li>
+          <li><i>▹</i><span><strong>Process &amp; field integration</strong> — PID tuning, cascade and feed-forward control; instrumentation, analog/digital I/O, VFDs, MCCs, and remote I/O.</span></li>
+          <li><i>▹</i><span><strong>Controlled interfaces</strong> — PROFINET, EtherNet/IP, EtherCAT, and Modbus TCP integration with documented state machines, alarms, and handshake matrices.</span></li>
+          <li><i>▹</i><span><strong>Verification &amp; startup</strong> — Simulation, FAT/SAT, I/O and loop checks, commissioning, and startup support against agreed requirements.</span></li>
         </ul>
+        <a href="#engineering" class="engineering-link mono">VIEW ENGINEERING APPROACH ↓</a>
       </article>
 
       <article class="cap-card reveal">
@@ -168,15 +171,84 @@
         <figure class="cap-img">
           <img src="img/cap-iiot.jpg" alt="Rugged edge gateway with antennas emitting lime telemetry streams" width="1400" height="939" loading="lazy">
         </figure>
-        <h3>IIoT Architecture &amp; Analytics</h3>
-        <a href="machine-health.html" class="clean-text-link mono">EXPLORE MACHINE HEALTH ↗</a>
-        <p>Gain full, granular line visibility. We bridge edge sensors directly to modern analytics networks for complete floor transparency.</p>
+        <h3 id="iiot-architecture">IIoT Architecture &amp; Analytics</h3>
+        <p>Connect the control layer to useful operational information. Design the data path, security boundaries, historian strategy, and maintenance workflow as one system.</p>
         <ul class="cap-points">
-          <li><i>▹</i><span><strong>OPC UA Unified Framework</strong> — standardized semantic model structuring to stream contextual data from the sensor up to the enterprise database.</span></li>
-          <li><i>▹</i><span><strong>MQTT/AMQP Edge Gateways</strong> — lightweight, ultra-reliable telemetry publication preserving data packets during intermittent drops.</span></li>
-          <li><i>▹</i><span><strong>Predictive Health Metrics</strong> — continuous thermal, current draw, and vibration tracking to catch component failures before downtime hits.</span></li>
+          <li><i>▹</i><span><strong>OT data architecture</strong> — Contextual OPC UA models and MQTT/AMQP edge messaging, with timestamp quality, buffering, retention, and historical trending defined for the site.</span></li>
+          <li><i>▹</i><span><strong>Machine health monitoring</strong> — Vibration, acoustic, and temperature measurements linked to validated condition insights and the team responsible for action.</span></li>
+          <li><i>▹</i><span><strong>Operational integration</strong> — Connect SCADA/HMI, historians, analytics, and enterprise applications through governed interfaces and controlled ROS2 gateways.</span></li>
+          <li><i>▹</i><span><strong>Measured outcomes</strong> — Agree on baselines and acceptance criteria for availability, maintenance response, production performance, and resource use.</span></li>
         </ul>
+        <div class="hero-actions"><a href="#engineering" class="engineering-link mono">EXPLORE THE ARCHITECTURE ↓</a><a href="machine-health.html" class="engineering-link mono">MACHINE HEALTH ↗</a></div>
       </article>
+    </div>
+
+    <div id="engineering" class="clean-section engineering-section">
+      <div class="clean-heading"><div><div class="kicker mono accent">// INDUSTRIAL ENGINEERING</div><h2>Engineered for<br>industrial reality.</h2></div><p>Clear requirements, governed interfaces, and documented validation connect a compelling automation concept to a maintainable plant system.</p></div>
+      <nav class="engineering-jumps mono" aria-label="Engineering topics"><a href="#reference-architecture">ARCHITECTURE ↓</a><a href="#engineering-controls">ENGINEERING ↓</a><a href="#standards">STANDARDS ↓</a><a href="#outcomes">OUTCOMES ↓</a><a href="#process">DELIVERY ↓</a></nav>
+      <div id="reference-architecture" class="architecture-panel">
+        <div class="kicker mono accent">// REFERENCE SYSTEM ARCHITECTURE</div>
+        <h3>From field signals to enterprise decisions.</h3>
+        <ol class="architecture-flow">
+          <li><span class="mono accent">01</span><h4>Field devices</h4><p>Sensors, instruments, drives, and actuators</p></li>
+          <li><span class="mono accent">02</span><h4>PLC / Safety PLC</h4><p>Control logic and engineered safety functions</p></li>
+          <li><span class="mono accent">03</span><h4>Industrial network</h4><p>Managed communication and segmentation</p></li>
+          <li><span class="mono accent">04</span><h4>SCADA / HMI</h4><p>Operator interaction and supervision</p></li>
+          <li><span class="mono accent">05</span><h4>OPC UA / MQTT edge</h4><p>Context, buffering, and controlled exchange</p></li>
+          <li><span class="mono accent">06</span><h4>Historian</h4><p>Time-series records and retention</p></li>
+          <li><span class="mono accent">07</span><h4>Analytics / AI</h4><p>Trends, condition insights, and optimization</p></li>
+          <li><span class="mono accent">08</span><h4>Enterprise systems</h4><p>Maintenance, operations, and business workflows</p></li>
+        </ol>
+        <div class="architecture-bridge"><span class="mono accent">ROS2 SYSTEMS</span><span aria-hidden="true">↔</span><strong>Controlled integration gateway</strong><span aria-hidden="true">↔</span><span>Defined PLC / OT interfaces</span></div>
+        <p class="spec-note">Illustrative information architecture, adapted to each site. Safety functions stay within the engineered and validated safety system; analytics do not replace safety controls.</p>
+      </div>
+      <div id="engineering-controls" class="engineering-controls">
+        <div class="clean-heading"><div><div class="kicker mono accent">// DESIGN FOR THE WHOLE LIFECYCLE</div><h3>Control. Protect. Maintain.</h3></div><p>Define the engineering practices and deliverables your project needs before selecting the implementation.</p></div>
+        <div class="health-evaluation">
+          <details open><summary><span class="mono accent">01</span>OT cybersecurity architecture</summary><p>Scope Purdue-aligned segmentation and ISA/IEC 62443 zones and conduits. Define industrial firewalls, controlled remote access, MFA, asset inventory, patch governance, and backup ownership against the site risk assessment.</p></details>
+          <details><summary><span class="mono accent">02</span>Functional and machine safety</summary><p>Start with hazard and risk assessment, then document safety requirements, design, verification, and validation. Scope safety PLCs, safety networks, scanners, interlocks, and proof testing where applicable.</p></details>
+          <details><summary><span class="mono accent">03</span>Reliability and high availability</summary><p>Assess redundant PLCs, hot standby, controller failover, server and network redundancy, historian replication, and monitored diagnostics. Agree on backup, restore, and disaster-recovery objectives and verify recovery procedures.</p></details>
+          <details><summary><span class="mono accent">04</span>PLC engineering and migration governance</summary><p>Use control narratives, FDS, state machines, alarm conventions, and handshake matrices with version control and simulation tests. Plan cutover, rollback, and acceptance criteria for PLC-5 / SLC500 to ControlLogix, S7-300 to S7-1500, or other platform migrations as applicable.</p></details>
+          <details><summary><span class="mono accent">05</span>Historian and data governance</summary><p>Define asset models, naming, timestamps, data quality, raw versus processed access, storage, retention, buffering, and replication. Assign ownership for interfaces and changes from the field layer to enterprise applications.</p></details>
+          <details><summary><span class="mono accent">06</span>Maintainability and operating support</summary><p>Establish asset inventories, lifecycle and obsolescence plans, controlled change and release procedures, operator training, and turnover documentation. Agree on hypercare, escalation paths, and ongoing support responsibilities.</p></details>
+        </div>
+      </div>
+      <div id="standards" class="engineering-controls">
+        <div class="kicker mono accent">// DESIGN REFERENCES</div><h3>Standards matched to the application.</h3>
+        <p class="engineering-intro">Applicable standards, editions, and project acceptance requirements are agreed during scoping. These references describe the engineering framework; they are not a claim of certification.</p>
+        <dl class="standards-list">
+          <div><dt><a href="https://www.isa.org/standards-and-publications/isa-standards/isa-95-standard">ISA-95 / IEC 62264 ↗</a></dt><dd>Enterprise and control-system integration.</dd></div>
+          <div><dt><a href="https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards">ISA/IEC 62443 ↗</a></dt><dd>Industrial automation and control-system cybersecurity.</dd></div>
+          <div><dt><a href="https://assets.iec.ch/public/acos/IEC%2061508%20%26%20Functional%20Safety-2022.pdf">IEC 61508 ↗</a></dt><dd>Functional safety of electrical, electronic, and programmable electronic safety-related systems.</dd></div>
+          <div><dt><a href="https://webstore.iec.ch/en/publication/5527">IEC 61511 ↗</a></dt><dd>Safety instrumented systems for process-industry applications, where relevant.</dd></div>
+          <div><dt><a href="https://www.iso.org/standard/73933.html">ISO 10218 ↗</a> / <a href="https://www.automate.org/robotics/safety/robot-safety-standard-documents">ANSI/A3 R15.06 ↗</a></dt><dd>Industrial robot and robot-system safety.</dd></div>
+          <div><dt><a href="https://webstore.iec.ch/en/publication/68533">IEC 61131-3 ↗</a></dt><dd>PLC programming languages, alongside relevant OEM engineering requirements.</dd></div>
+        </dl>
+      </div>
+      <div class="engineering-controls">
+        <div class="kicker mono accent">// DIGITAL TRANSFORMATION ROADMAP</div><h3>Build maturity in deliberate stages.</h3>
+        <ol class="maturity-path">
+<li><strong>Assess</strong><p>Baseline assets, data, risks, and priorities.</p></li>
+<li><strong>Connect</strong><p>Establish governed interfaces and reliable acquisition.</p></li>
+<li><strong>Visualize</strong><p>Make operating context and trends visible.</p></li>
+<li><strong>Optimize</strong><p>Improve workflows and control performance.</p></li>
+<li><strong>Predict</strong><p>Validate condition insights against evidence.</p></li>
+<li><strong>Autonomous operation</strong><p>Consider bounded automation after validation and risk review.</p></li>
+        </ol>
+      </div>
+      <div id="outcomes" class="engineering-controls">
+        <div class="kicker mono accent">// MEASURABLE OUTCOMES</div><h3>Agree on the baseline. Track the result.</h3>
+        <p class="engineering-intro">Choose the measures relevant to the project, define their calculation and data source, and review them against the agreed baseline. Targets and results are site-specific.</p>
+        <div class="outcome-grid">
+<article><h4>OEE &amp; throughput</h4><p>Availability, performance, and quality in production context.</p></article>
+<article><h4>Downtime</h4><p>Frequency, duration, and causes of production interruptions.</p></article>
+<article><h4>MTBF &amp; MTTR</h4><p>Mean time between failures and mean time to repair.</p></article>
+<article><h4>Labor &amp; workflows</h4><p>Manual intervention, task time, and operator workload.</p></article>
+<article><h4>Inventory accuracy</h4><p>Agreement between system records and physical stock.</p></article>
+<article><h4>Energy &amp; reliability</h4><p>Energy use per defined output and asset condition trends.</p></article>
+        </div>
+        <a href="#contact" data-model="IIoT Stack" class="btn btn-solid mono">SCOPE AN ENGINEERING REVIEW ↗</a>
+      </div>
     </div>
   </section>
 
@@ -212,33 +284,25 @@
   </section>
 
   <!-- ============ PROCESS ============ -->
-  <section id="process" class="section">
-    <div class="section-head">
-      <h2>Integration lifecycle</h2>
-      <div class="section-num mono">// 03 — PROCESS</div>
-    </div>
-    <div class="steps-grid">
-      <div class="step reveal">
-        <div class="step-num mono">01</div>
-        <h3>Network &amp; Field Audit</h3>
-        <p>Mapping your existing PLC registers, checking local networking capabilities, and auditing structural workflow steps.</p>
-      </div>
-      <div class="step reveal">
-        <div class="step-num mono">02</div>
-        <h3>ROS-Gazebo Emulation</h3>
-        <p>Simulating full system manipulation, path trajectories, and communication loop latency before installing hardware.</p>
-      </div>
-      <div class="step reveal">
-        <div class="step-num mono">03</div>
-        <h3>Fieldbus Integration</h3>
-        <p>Deploying hardware, writing custom protocol handshake mapping blocks, and structuring logic routines.</p>
-      </div>
-      <div class="step reveal">
-        <div class="step-num mono">04</div>
-        <h3>Edge Dashboarding</h3>
-        <p>Spinning up OPC UA / MQTT pipelines to push production data straight to live operator and engineering views.</p>
-      </div>
-    </div>
+  <section id="process" class="clean-section delivery-section">
+    <div class="clean-heading"><div><div class="kicker mono accent">// 03 — DELIVERY</div><h2>From requirement to<br>operational performance.</h2></div><p>A structured engineering lifecycle creates clearer requirements, stronger acceptance criteria, and better long-term maintainability.</p></div>
+    <ol class="delivery-grid">
+      <li><span class="mono accent">01</span><h3>Discovery</h3><p>Review assets, constraints, operating risks, and project objectives.</p></li>
+      <li><span class="mono accent">02</span><h3>URS</h3><p>Document user requirements and measurable acceptance criteria.</p></li>
+      <li><span class="mono accent">03</span><h3>Design</h3><p>Develop functional and system designs, control philosophies, and interfaces.</p></li>
+      <li><span class="mono accent">04</span><h3>Simulation</h3><p>Exercise logic, interactions, and operating scenarios before installation.</p></li>
+      <li><span class="mono accent">05</span><h3>FAT</h3><p>Factory Acceptance Testing against the agreed test plan.</p></li>
+      <li><span class="mono accent">06</span><h3>Installation</h3><p>Install hardware, networks, instrumentation, and field connections.</p></li>
+      <li><span class="mono accent">07</span><h3>SAT</h3><p>Site Acceptance Testing of the installed system and its interfaces.</p></li>
+      <li><span class="mono accent">08</span><h3>Commissioning</h3><p>Complete I/O checkout, loop checks, integrated tests, and startup support.</p></li>
+      <li><span class="mono accent">09</span><h3>Validation</h3><p>Verify intended operation; scope IQ/OQ activities where the project requires them.</p></li>
+      <li><span class="mono accent">10</span><h3>Training</h3><p>Prepare operators and maintenance teams for routine work and recovery.</p></li>
+      <li><span class="mono accent">11</span><h3>Hypercare</h3><p>Support the initial operating period with agreed escalation and issue tracking.</p></li>
+      <li><span class="mono accent">12</span><h3>Continuous improvement</h3><p>Review performance, prioritize changes, and maintain controlled releases.</p></li>
+    </ol>
+    <div class="engineering-deliverables"><div><div class="kicker mono accent">// ENGINEERING DELIVERABLES</div><h3>Designed. Tested.<br>Validated. Supported.</h3><p>Agree on the documentation and acceptance package at project start, then maintain it through handover.</p></div><ul>
+      <li>User Requirement Specifications (URS)</li><li>Functional Design Specifications (FDS)</li><li>System Design Specifications (SDS)</li><li>Control philosophies and handshake matrices</li><li>Test plans and documented acceptance criteria</li><li>Commissioning and validation records</li><li>Operator training and turnover documentation</li>
+    </ul></div>
   </section>
 
   <!-- ============ CONTACT ============ -->
@@ -276,7 +340,7 @@
             <button type="button" class="chip mono" aria-pressed="false" data-value="Machine health assessment">MACHINE HEALTH</button>
             <button type="button" class="chip mono" aria-pressed="false" data-value="SoluDe Clean 80">CLEAN 80</button>
             <button type="button" class="chip mono" aria-pressed="false" data-value="ROS2 Robotics">ROS2 ROBOTICS</button>
-            <button type="button" class="chip mono" aria-pressed="false" data-value="PLC Fieldbus">PLC FIELDBUS</button>
+            <button type="button" class="chip mono" aria-pressed="false" data-value="PLC Engineering">PLC ENGINEERING</button>
             <button type="button" class="chip mono" aria-pressed="false" data-value="IIoT Stack">IIOT STACK</button>
             <button type="button" class="chip mono" aria-pressed="false" data-value="AgTech Autonomy">AGTECH AUTONOMY</button>
           </div>
