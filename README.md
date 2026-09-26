@@ -38,3 +38,7 @@ python3 -m http.server 8000
 ## Machine Health
 
 `machine-health.html` presents the industrial condition-monitoring service, measurement domains, OT/IT data path, and evaluation framework. Assessment, pilot, and integration links select the appropriate email-enquiry interest. See [source and scope notes](docs/machine-health.md).
+
+## Industrial engineering
+
+The homepage's `#iiot-architecture` card links to `#engineering` for the reference architecture, engineering practices, standards, maturity roadmap, and outcome framework. `#process` contains the full delivery lifecycle and engineering deliverables. See [source and scope notes](docs/industrial-engineering.md).

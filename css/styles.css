@@ -921,3 +921,43 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   .health-evaluation details p { margin-left: 0; font-size: 14px; }
   .health-page .clean-hero h1 { font-size: clamp(38px, 10vw, 66px); }
 }
+
+/* Industrial engineering addendum, extending the IIoT capability section */
+#iiot-architecture, #engineering, #reference-architecture, #engineering-controls, #standards, #outcomes { scroll-margin-top: 88px; }
+.engineering-link { display: inline-block; font-size: 10px; letter-spacing: .08em; padding-top: 24px; }
+.engineering-jumps { display: flex; gap: 16px 28px; flex-wrap: wrap; font-size: 10px; letter-spacing: .08em; margin: 0 0 40px; }
+.architecture-panel { padding: 32px; border: 1px solid var(--line-strong); background: var(--bg-alt); }
+.architecture-panel > h3, .engineering-controls h3 { font-size: clamp(23px, 2.4vw, 34px); letter-spacing: -.02em; margin: 0 0 24px; }
+.architecture-flow { display: grid; grid-template-columns: repeat(4, 1fr); list-style: none; margin: 30px 0; padding: 0; gap: 1px; background: var(--line-strong); border: 1px solid var(--line-strong); }
+.architecture-flow li { padding: 24px 20px; background: var(--bg); min-width: 0; }
+.architecture-flow span { font-size: 11px; }
+.architecture-flow h4 { font-size: 17px; margin: 20px 0 12px; }
+.architecture-flow p, .outcome-grid p, .maturity-path p, .delivery-grid p { font-size: 13px; color: var(--muted); line-height: 1.65; margin: 0; }
+.architecture-bridge { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; padding: 20px 0; border-top: 1px solid var(--line-strong); font-size: 13px; }
+.architecture-bridge .mono { font-size: 11px; }
+.engineering-controls { margin-top: 64px; }
+.engineering-controls .clean-heading h3 { margin: 0; }
+.engineering-intro { color: var(--muted); line-height: 1.7; font-size: 14px; max-width: 900px; margin: 0 0 28px; }
+.standards-list { margin: 0; border-top: 1px solid var(--line-strong); }
+.standards-list > div { display: grid; grid-template-columns: 1fr 1.5fr; gap: 24px; padding: 22px 0; border-bottom: 1px solid var(--line-strong); }
+.standards-list dt { font-size: 14px; font-weight: 600; }
+.standards-list dd { margin: 0; font-size: 14px; color: var(--muted); line-height: 1.6; }
+.maturity-path { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; list-style-position: inside; padding: 0; margin: 28px 0 0; }
+.maturity-path li { border-top: 2px solid var(--accent); padding: 20px 0; }
+.maturity-path li::marker { color: var(--accent); font-family: var(--mono); }
+.maturity-path strong { font-size: 16px; }
+.maturity-path p { margin-top: 14px; }
+.outcome-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line-strong); gap: 0 32px; margin-bottom: 28px; }
+.outcome-grid article { padding: 24px 0; border-bottom: 1px solid var(--line-strong); }
+.outcome-grid h4 { font-size: 17px; margin: 0 0 14px; }
+.delivery-grid { display: grid; grid-template-columns: repeat(4, 1fr); padding: 0; margin: 0; list-style: none; gap: 1px; background: var(--line-strong); border: 1px solid var(--line-strong); }
+.delivery-grid li { background: var(--bg-alt); padding: 28px 24px; }
+.delivery-grid span { font-size: 20px; }
+.delivery-grid h3 { font-size: 17px; margin: 20px 0 14px; }
+.engineering-deliverables { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; padding-top: 56px; }
+.engineering-deliverables h3 { font-size: clamp(28px, 3vw, 42px); line-height: 1.1; margin: 0 0 20px; }
+.engineering-deliverables p { font-size: 14px; line-height: 1.7; color: var(--muted); max-width: 460px; }
+.engineering-deliverables ul { margin: 0; padding-left: 20px; display: grid; gap: 14px; font-size: 14px; line-height: 1.5; color: var(--text-soft); }
+.engineering-deliverables li::marker { color: var(--accent); }
+@media(max-width:960px) { .architecture-flow, .delivery-grid { grid-template-columns: 1fr 1fr; } .maturity-path, .outcome-grid { grid-template-columns: 1fr 1fr; } }
+@media(max-width:720px) { .architecture-panel { padding: 24px 16px; } .architecture-flow, .delivery-grid, .maturity-path, .outcome-grid, .engineering-deliverables, .standards-list > div { grid-template-columns: 1fr; } .architecture-flow li { padding: 22px 20px; } .standards-list > div { gap: 12px; } .engineering-deliverables { gap: 24px; } .engineering-section .btn { font-size: 11px; padding-left: 16px; padding-right: 16px; } }
