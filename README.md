@@ -34,3 +34,7 @@ python3 -m http.server 8000
 ## SoluDe Access
 
 `access.html` introduces Guide 55, Gate S2, Pass Mobile, and Serve T5, with model-specific email enquiries. The homepage and shared navigation connect all product lines. See [product sources and visualization details](docs/solude-access.md) for manufacturer mappings and configuration limits.
+
+## Machine Health
+
+`machine-health.html` presents the industrial condition-monitoring service, measurement domains, OT/IT data path, and evaluation framework. Assessment, pilot, and integration links select the appropriate email-enquiry interest. See [source and scope notes](docs/machine-health.md).

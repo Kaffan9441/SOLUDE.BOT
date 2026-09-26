@@ -880,3 +880,44 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .access-model .spec-note { margin-bottom: 26px; }
 @media(max-width:960px) { .access-intro { grid-template-columns: 1fr; gap: 24px; padding-top: 44px; } .access-intro-copy > p { max-width: 650px; } }
 @media(max-width:720px) { .access-intro-copy > p { font-size: 16px; } .access-lineup { margin-top: 24px; } .access-lineup figcaption { font-size: 7px; } .access-specs > div { grid-template-columns: 1fr 1.35fr; gap: 12px; } .access-specs dd { font-size: 14px; } .access-model .btn { font-size: 10px; } }
+
+/* Machine-health service */
+.health-highlight { box-shadow: inset 0 3px var(--accent); }
+.health-signal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.health-path { display: grid; grid-template-columns: repeat(4, 1fr); padding: 0; margin: 0; list-style: none; border: 1px solid var(--line-strong); }
+.health-path li { padding: 30px 24px; border-right: 1px solid var(--line-strong); }
+.health-path li:last-child { border-right: 0; }
+.health-path span { font-size: 11px; letter-spacing: .1em; }
+.health-path h3 { font-size: 25px; margin: 24px 0 14px; }
+.health-path p, .health-interfaces p { font-size: 14px; line-height: 1.7; color: var(--muted); margin: 0; }
+.health-interfaces { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 36px; }
+.health-interfaces h3 { margin: 0 0 18px; font-size: 19px; }
+.health-tags { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 18px; }
+.health-tags span { display: block; border: 1px solid var(--line-strong); padding: 12px 16px; color: var(--text-soft); font-size: 11px; letter-spacing: .05em; }
+.health-assets { margin-bottom: 36px; }
+.health-evaluation { border-top: 1px solid var(--line-strong); }
+.health-evaluation details { border-bottom: 1px solid var(--line-strong); }
+.health-evaluation summary { cursor: pointer; font-size: 20px; font-weight: 600; padding: 24px 0; }
+.health-evaluation summary span { margin: 0 18px 0 10px; font-size: 13px; }
+.health-evaluation summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.health-evaluation details p { max-width: 880px; margin: 0 0 28px 54px; color: var(--muted); font-size: 15px; line-height: 1.7; }
+@media(max-width:1100px) { .nav-links { gap: 15px; } .nav-link { letter-spacing: .08em; } }
+@media(max-width:960px) {
+  .nav-toggle { display: flex; }
+  .nav-links { position: fixed; top: 64px; left: 0; right: 0; flex-direction: column; align-items: flex-start; gap: 0; background: rgba(11,12,13,.97); border-bottom: 1px solid var(--line); padding: 8px 0 16px; transform: translateY(-8px); opacity: 0; pointer-events: none; visibility: hidden; transition: opacity .2s ease, transform .2s ease; }
+  .nav.open .nav-links { opacity: 1; transform: none; pointer-events: auto; visibility: visible; }
+  .nav-link { padding: 14px 20px; width: 100%; }
+  .nav-cta { margin: 12px 20px 0; }
+  .health-path { grid-template-columns: 1fr 1fr; }
+  .health-path li { border-bottom: 1px solid var(--line-strong); }
+  .health-path li:nth-child(even) { border-right: 0; }
+}
+@media(max-width:720px) {
+  .health-signal-grid, .health-path, .health-interfaces { grid-template-columns: 1fr; }
+  .health-path li { border-right: 0; }
+  .health-path li:last-child { border-bottom: 0; }
+  .health-evaluation summary { font-size: 16px; }
+  .health-evaluation summary span { margin-right: 8px; }
+  .health-evaluation details p { margin-left: 0; font-size: 14px; }
+  .health-page .clean-hero h1 { font-size: clamp(38px, 10vw, 66px); }
+}
