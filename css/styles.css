@@ -805,3 +805,59 @@ h1, h2, h3 { text-wrap: balance; }
   .blink-dot { animation: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
+
+/* SoluDe Clean product line */
+.skip-link { position: fixed; top: -100px; left: 20px; z-index: 100; padding: 14px; background: var(--accent); color: var(--bg); }
+.skip-link:focus { top: 12px; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+.field-label { font-size: 11px; letter-spacing: .14em; color: var(--muted); }
+.form-help, .spec-note { font-size: 12px; line-height: 1.65; color: var(--muted); }
+.form-help { margin: 0; letter-spacing: 0; }
+.clean-feature { display: grid; grid-template-columns: 1fr 1fr; align-items: center; border-bottom: 1px solid var(--line); background: var(--bg-alt); }
+.clean-feature-copy { padding: 80px 32px; }
+.clean-feature h2, .clean-heading h2 { font-size: clamp(32px, 4vw, 58px); line-height: 1.03; text-transform: uppercase; letter-spacing: -.035em; margin: 0 0 24px; }
+.clean-feature-copy p { max-width: 540px; color: var(--muted); line-height: 1.65; margin: 0 0 28px; }
+.clean-feature-meta { font-size: 10px; color: var(--muted); margin-top: 24px; letter-spacing: .08em; }
+.clean-feature-image { margin: 0; }
+.clean-feature-image img { width: 100%; height: auto; display: block; }
+.clean-feature-image figcaption { padding: 12px 24px 28px; font-size: 9px; color: var(--muted); letter-spacing: .08em; }
+.clean-hero { padding: 100px 32px 0; background: radial-gradient(ellipse at 80% 50%, #181e12, var(--bg) 65%); }
+.clean-hero-top { display: flex; justify-content: space-between; gap: 20px; color: var(--muted); font-size: 10px; letter-spacing: .14em; padding-bottom: 24px; border-bottom: 1px solid var(--line-strong); }
+.clean-hero-grid { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 12px; min-height: 660px; }
+.clean-hero-copy { padding: 50px 0; position: relative; z-index: 1; }
+.clean-hero h1 { font-size: clamp(44px, 5.1vw, 82px); text-transform: uppercase; letter-spacing: -.045em; line-height: 1.02; margin: 0 0 28px; }
+.clean-hero-copy > p { color: var(--muted); font-size: 17px; line-height: 1.7; max-width: 490px; margin: 0 0 32px; }
+.clean-text-link { font-size: 11px; padding: 16px 0; }
+.clean-hero-image { margin: 0; min-width: 0; }
+.clean-hero-image img { width: 100%; height: auto; display: block; mix-blend-mode: lighten; }
+.clean-hero-image figcaption { font-size: 9px; line-height: 1.8; text-align: right; color: var(--muted); letter-spacing: .12em; }
+.clean-strip { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding: 25px 0; border-top: 1px solid var(--line-strong); color: var(--text-soft); font-size: 10px; letter-spacing: .12em; }
+.clean-strip span:before { content: '▹'; color: var(--accent); margin-right: 12px; }
+.clean-section { padding: 88px 32px; border-top: 1px solid var(--line); }
+.clean-heading { display: flex; justify-content: space-between; gap: 40px; align-items: end; margin-bottom: 42px; }
+.clean-heading h2 { margin: 0; }
+.clean-heading > p { max-width: 360px; color: var(--muted); font-size: 15px; line-height: 1.65; margin: 0; }
+.clean-model-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.clean-model { background: var(--bg-alt); padding: 32px; border: 1px solid var(--line-strong); }
+.clean-model-label { display: flex; justify-content: space-between; gap: 20px; font-size: 10px; letter-spacing: .12em; color: var(--muted); border-bottom: 1px solid var(--line); padding-bottom: 24px; }
+.clean-model h3 { font-size: 18px; margin: 30px 0 20px; font-weight: 500; }
+.clean-model h3 > span { display: block; font-size: clamp(26px, 2.8vw, 40px); letter-spacing: -.025em; line-height: 1.1; font-weight: 700; margin-top: 14px; }
+.clean-model > p { color: var(--muted); line-height: 1.65; max-width: 450px; }
+.clean-specs { display: grid; grid-template-columns: 1fr 1fr; margin: 30px 0 0; }
+.clean-specs > div { padding: 22px 0; border-top: 1px solid var(--line); }
+.clean-specs dt { font-family: var(--mono); text-transform: uppercase; letter-spacing: .04em; font-size: 10px; color: var(--muted); margin-bottom: 10px; }
+.clean-specs dd { font-size: 30px; margin: 0; font-weight: 600; letter-spacing: -.03em; }
+.clean-specs small { font-size: 12px; font-weight: 400; color: var(--muted); }
+.clean-model .btn { margin-top: 12px; font-size: 11px; }
+.clean-operations { background: var(--bg-alt); }
+.clean-page .contact-info, .clean-page .contact-form-wrap { padding-top: 80px; padding-bottom: 80px; }
+@media(min-width:1600px) { .clean-section, .clean-hero { padding-left: calc((100vw - 1472px)/2); padding-right: calc((100vw - 1472px)/2); } }
+@media(max-width:1100px) { .nav-links { gap: 18px; } .nav-link { font-size: 10px; } .clean-hero-grid { min-height: 580px; } .clean-hero .kicker { font-size: 10px; } }
+@media(max-width:960px) { .clean-hero-grid, .clean-feature { grid-template-columns: 1fr; } .clean-hero-copy { padding-bottom: 10px; } .clean-hero h1 { font-size: clamp(44px, 8vw, 76px); } .clean-hero-image { max-width: 700px; width: 100%; margin: 0 auto 28px; } .clean-feature-copy { padding-bottom: 0; } .clean-heading { align-items: start; flex-direction: column; gap: 22px; } .clean-heading > p { max-width: 550px; } .clean-model { padding: 24px; } }
+@media(max-width:720px) { .clean-hero { padding: 92px 20px 0; } .clean-hero-top { font-size: 9px; } .clean-hero-top > span:last-child { display: none; } .clean-hero h1 { font-size: clamp(38px, 10vw, 66px); } .clean-section { padding: 60px 20px; } .clean-model-grid { grid-template-columns: 1fr; } .clean-feature-copy { padding: 60px 20px 0; } .clean-strip { display: grid; grid-template-columns: 1fr 1fr; font-size: 8px; gap: 18px 10px; } .clean-strip span:before { margin-right: 6px; } .clean-hero-copy > p { font-size: 16px; } .clean-model .btn { padding-left: 16px; padding-right: 16px; } .footer-right { flex-wrap: wrap; gap: 18px; } .contact-row { flex-wrap: wrap; } }
+@media(max-width:380px) {
+  .hero h1 { font-size: 36px; }
+  .hero-actions .btn { max-width: 100%; padding-left: 16px; padding-right: 16px; }
+  .contact-info h2, .mission-body h2, .agtech h2 { overflow-wrap: anywhere; }
+  .clean-specs dd { font-size: 25px; }
+}

@@ -1,11 +1,12 @@
 # SoluDe.bot — Marketing Site
 
-Static single-page site for SoluDe.bot: ROS2 robotics × PLC industrial integration.
+Static marketing site for SoluDe.bot: ROS2 robotics × PLC industrial integration.
 
 ## Structure
 
 ```
-index.html       — all page content (hero, mission, capabilities, agtech, process, contact)
+index.html       — industrial automation homepage (hero, mission, capabilities, agtech, process, contact)
+cleaning.html    — SoluDe Clean product line and model enquiries
 css/styles.css   — theme, layout, responsive breakpoints (960px / 720px), reduced-motion support
 js/main.js       — hero canvas (robotic-arm IK animation), scroll reveals, mobile nav, contact form
 ```
@@ -22,7 +23,10 @@ python3 -m http.server 8000
 ## Notes
 
 - Fonts (Archivo, IBM Plex Mono) load from Google Fonts; everything else is self-contained.
-- The contact form is front-end only — wire the submit handler in `js/main.js` to a backend or
-  form service (e.g. Formspree) when ready.
+- The contact forms validate name/email and open a prefilled draft to architecture@solude.bot. Visitors must send the email themselves; the site does not store or submit enquiries.
 - The hero animation pauses when scrolled off-screen and renders a static frame for users with
   `prefers-reduced-motion` enabled.
+
+## SoluDe Clean
+
+`cleaning.html` introduces the SoluDe Clean 55 / 80 floor-care line, linked from the homepage and navigation. See [implementation and product provenance](docs/solude-clean.md) for specification sources, image-generation details, and enquiry behavior.

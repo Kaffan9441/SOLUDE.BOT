@@ -56,7 +56,10 @@
   var chipRow = document.getElementById('chip-row');
   chipRow.addEventListener('click', function (e) {
     var chip = e.target.closest('.chip');
-    if (chip) chip.classList.toggle('active');
+    if (chip) {
+      var active = chip.classList.toggle('active');
+      chip.setAttribute('aria-pressed', String(active));
+    }
   });
 
   var form = document.getElementById('integration-form');
@@ -66,22 +69,22 @@
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
-    if (!nameInput.value.trim()) {
-      nameInput.classList.add('invalid');
+    if (!nameInput.value.trim() || !form.checkValidity()) {
       statusEl.classList.add('error');
-      statusEl.textContent = '// ERR — FULL NAME REQUIRED';
-      nameInput.focus();
+      statusEl.textContent = '// CHECK YOUR NAME AND EMAIL';
+      if (!nameInput.value.trim()) nameInput.focus();
+      else form.reportValidity();
       return;
     }
-    nameInput.classList.remove('invalid');
     statusEl.classList.remove('error');
+    var interests = Array.from(chipRow.querySelectorAll('.chip.active')).map(function (chip) { return chip.dataset.value; });
+    var body = 'Name: ' + nameInput.value.trim() + '\nEmail: ' + document.getElementById('f-email').value.trim() +
+      '\nOrganization: ' + document.getElementById('f-org').value.trim() + '\nInterest: ' + (interests.join(', ') || 'General enquiry') +
+      '\n\nRequirements:\n' + document.getElementById('f-detail').value.trim();
+    var mailto = 'mailto:architecture@solude.bot?subject=' + encodeURIComponent('SoluDe.bot enquiry — ' + (interests.join(', ') || 'Automation')) + '&body=' + encodeURIComponent(body);
+    window.location.href = mailto;
+    statusEl.textContent = '// EMAIL DRAFT PREPARED — SEND IT FROM YOUR EMAIL APP. If it did not open, email architecture@solude.bot directly.';
 
-    // No backend wired up yet — acknowledge locally and reset.
-    statusEl.textContent = '// REQUEST LOGGED — AN ARCHITECT WILL RESPOND WITHIN 48H';
-    form.querySelectorAll('input, textarea').forEach(function (el) { el.value = ''; });
-    chipRow.querySelectorAll('.chip.active').forEach(function (chip) {
-      chip.classList.remove('active');
-    });
   });
 
   nameInput.addEventListener('input', function () {
@@ -92,9 +95,28 @@
     }
   });
 
+  document.querySelectorAll('[data-model]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      chipRow.querySelectorAll('.chip').forEach(function (chip) {
+        var selected = chip.dataset.value === link.dataset.model;
+        chip.classList.toggle('active', selected);
+        chip.setAttribute('aria-pressed', String(selected));
+      });
+    });
+  });
+
+  nav.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      nav.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.focus();
+    }
+  });
+
   /* ============ HERO CANVAS — robotic arm IK ============ */
 
   var canvas = document.getElementById('hero-canvas');
+  if (!canvas) return;
   var ctx = canvas.getContext('2d');
   var W = 0, H = 0, DPR = 1;
 
