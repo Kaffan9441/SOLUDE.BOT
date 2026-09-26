@@ -30,3 +30,7 @@ python3 -m http.server 8000
 ## SoluDe Clean
 
 `cleaning.html` introduces the SoluDe Clean 55 / 80 floor-care line, linked from the homepage and navigation. See [implementation and product provenance](docs/solude-clean.md) for specification sources, image-generation details, and enquiry behavior.
+
+## SoluDe Access
+
+`access.html` introduces Guide 55, Gate S2, Pass Mobile, and Serve T5, with model-specific email enquiries. The homepage and shared navigation connect all product lines. See [product sources and visualization details](docs/solude-access.md) for manufacturer mappings and configuration limits.
